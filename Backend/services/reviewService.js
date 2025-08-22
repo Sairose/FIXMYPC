@@ -5,7 +5,7 @@ import  User  from '../models/UserModel.js';
 const createReview = async (data) => {
     const { from, to, bookingId, role, rating, comment } = data;
 
-    // ✅ Ensure booking is completed (not just accepted)
+    // Ensure booking is completed (not just accepted)
     const booking = await Booking.findById(bookingId);
     if (!booking || booking.status !== 'completed') {
         throw new Error('You can only review after a completed booking.');

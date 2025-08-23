@@ -19,15 +19,15 @@ const Footer = () => {
           </div>
           
         </div>
-        <div className="right-footer flex justify-center items-center mt-10 lg:mt-0 gap-10">
+        <div className="right-footer flex justify-center items-center mt-10 gap-10 lg:mt-0 ">
           <a href="www.facebook.com"><img 
-            className='w-[30px] lg:w-[40px] border-none rounded-full'
+            className='w-[30px]  border-none rounded-full lg:w-[40px]'
           src="./images/fb.png" alt="" /></a>
           <a href=""><img 
-            className='w-[30px] lg:w-[40px] border-none rounded-full'
+            className='w-[30px]  border-none rounded-full lg:w-[40px]'
           src="./images/insta.png" alt="" /></a>
           <a href=""><img 
-            className='w-[30px] lg:w-[40px] border-none rounded-full'
+            className='w-[30px]  border-none rounded-full lg:w-[40px]'
           src="./images/tiktok.png" alt="" /></a>
         </div>
       </div>

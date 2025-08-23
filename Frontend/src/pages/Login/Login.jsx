@@ -58,7 +58,7 @@ const Login = () => {
             <ToastContainer />
             <div className="main-container w-full h-screen bg-[#F3F4F6] flex items-center justify-center">
                 <div className="flex flex-col items-center justify-center gap-6">
-                    <form onSubmit={handleSubmit} className='w-[411px] px-[22px] py-[14px] bg-[#FFFFFF] rounded-[5px] flex flex-col gap-[24px]'>
+                    <form onSubmit={handleSubmit} className='w-[80vw] sm:w-[411px] px-[22px] py-[14px] bg-[#FFFFFF] rounded-[5px] flex flex-col gap-[24px]'>
                         <h2 className='font-Source-Serif font-semibold text-2xl text-center'>Login</h2>
 
                         <div className='flex flex-col gap-2'>

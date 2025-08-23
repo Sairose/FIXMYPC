@@ -1,24 +1,10 @@
-// import React from 'react';
-// import CNavBar from '../Client-Navbar/CNavbar';
-// import { Outlet } from 'react-router-dom'; //  Only import Outlet, not createBrowserRouter
-
-// const CLayout = () => {
-//   return (
-//     <>
-//       <CNavBar />
-//       <Outlet />
-//     </>
-//   );
-// };
-
-// export default CLayout;
-
 
 import React, { useEffect } from 'react';
 import { Outlet } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
 import { useSocket } from '../../context/SocketContext';
 import CNavbar from '../Client-Navbar/CNavbar';
+
 
 const CLayout = () => {
   const { user } = useAuth();
@@ -44,7 +30,7 @@ const CLayout = () => {
 
   return (
     <div>
-      <CNavbar/>
+      <CNavbar />
       <Outlet />
     </div>
   );

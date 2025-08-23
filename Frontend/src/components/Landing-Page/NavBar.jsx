@@ -1,7 +1,7 @@
 import { RxHamburgerMenu } from "react-icons/rx";
 import { useState } from "react";
 
-const NavBar = () => {
+const NavBar = ({data}) => {
   const [openNav, setOpenNav] = useState(false);
 
   const handleNav = () => {
@@ -21,6 +21,7 @@ const NavBar = () => {
         md:opacity-100 md:translate-y-0 md:scale-100 md:w-auto md:block md:p-0
       `}
       >
+        
         <a href="#home" className="hover:text-[#05B878] duration-300 md:ml-10">Home</a>
         <a href="#about" className="hover:text-[#05B878] duration-300 md:ml-10">About</a>
         <a href="#footer" className="hover:text-[#05B878] duration-300 md:ml-10">Footer</a>

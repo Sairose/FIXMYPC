@@ -20,7 +20,7 @@ const Home = () => {
     }
     return (
         <>
-            <NavBar />
+            <NavBar/>
             <a href="#navbar" className="fixed bottom-16 right-[120px] w-fit p-3 border-none bg-[#05B878] rounded-full animate-bounce  hover:cursor-pointer">
                 <IoMdArrowUp className="text-3xl text-white"/>
             </a>

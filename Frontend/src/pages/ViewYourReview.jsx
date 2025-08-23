@@ -45,7 +45,9 @@ const ViewYourReview = () => {
             >
               <div className="flex justify-between items-center">
                 <p className="font-semibold">
-                  {review.from.firstName} {review.from.lastName} ({review.role})
+                  {review.from
+                    ? `${review.from.firstName} ${review.from.lastName} (${review.role})`
+                    : "Unknown User"}
                 </p>
                 <div className="text-yellow-500">
                   {'★'.repeat(review.rating)}
@@ -56,13 +58,12 @@ const ViewYourReview = () => {
               <div className="flex justify-between items-start mt-2">
                 <p className="text-gray-700 w-3/4">{review.comment}</p>
                 <span
-                  className={`px-3 py-1 text-sm rounded-full font-medium ${
-                    review.sentiment === 'positive'
+                  className={`px-3 py-1 text-sm rounded-full font-medium ${review.sentiment === 'positive'
                       ? 'bg-green-100 text-green-800'
                       : review.sentiment === 'negative'
-                      ? 'bg-red-100 text-red-800'
-                      : 'bg-gray-100 text-gray-800'
-                  }`}
+                        ? 'bg-red-100 text-red-800'
+                        : 'bg-gray-100 text-gray-800'
+                    }`}
                 >
                   {review.sentiment}
                 </span>

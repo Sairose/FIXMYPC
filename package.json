@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "node --watch Backend/app.js",
     "start": "node Backend/app.js",
-    "build": "npm install && npm install --prefix Frontend && npm run build --prefix Frontend"
+    "build": "npm install --legacy-peer-deps && npm install --prefix Frontend && npm run build --prefix Frontend"
   },
   "keywords": [],
   "author": "",

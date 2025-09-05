@@ -30,7 +30,8 @@ const _dirname = path.resolve();
 
 //cors 
 app.use(cors({
-  origin: 'http://localhost:5173',
+  // origin: 'http://localhost:5173',
+  origin: 'https://fixmypc-u4qb.onrender.com',
   credentials: true
 }));
 
@@ -44,6 +45,8 @@ app.use('/api/reviews', reviewRoutes);
 app.use('/api/messages', messageRoutes);
 app.use('/api/admin',auth, isAdmin, adminRoutes);
 
+// serve images from public
+app.use(express.static(path.join(_dirname, "Frontend", "public")));
 app.use(express.static(path.join(_dirname, "/Frontend/dist")));
 app.get('/*splat',(req, res)=>{
   res.sendFile(path.resolve(_dirname, "Frontend", "dist", "index.html"));

@@ -41,7 +41,7 @@ const Home = () => {
                 </div>
                 <div className="hero-right">
                     <img src="/images/hero-image.png" alt="Error"
-                        className="w-[400px] h[400px] mix-blend-multiply object-cover md:w-[450px] lg:w-[534px] lg:h-[357px] "
+                        className="w-[400px] h[400px] object-cover md:w-[450px] lg:w-[534px] lg:h-[357px] "
                     />
                 </div>
             </div>

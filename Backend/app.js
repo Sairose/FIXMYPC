@@ -13,6 +13,7 @@ import http from 'http'
 import { setupSocket } from './socket/socket.js';
 import { auth } from './middlewares/authMiddleware.js';
 import { isAdmin } from './middlewares/roleBasedAuth.js';
+import path from 'path';
 
 //db connection
 connectDB();
@@ -24,6 +25,8 @@ dotenv.config();
 const app = express();
 const server = http.createServer(app);
 const io = setupSocket(server);
+const _dirname = path.resolve();
+
 
 //cors 
 app.use(cors({
@@ -40,6 +43,11 @@ app.use('/api/bookings', bookingRoutes);
 app.use('/api/reviews', reviewRoutes);
 app.use('/api/messages', messageRoutes);
 app.use('/api/admin',auth, isAdmin, adminRoutes);
+
+app.use(express.static(path.join(_dirname, "/Frontend/dist")));
+app.get('/*splat',(req, res)=>{
+  res.sendFile(path.resolve(_dirname, "Frontend", "dist", "index.html"));
+})
 
 server.listen(process.env.PORT, ()=>{
     console.log(`server is running on prot ${process.env.PORT}`);

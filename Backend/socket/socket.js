@@ -1,6 +1,6 @@
 import { Server } from "socket.io";
-import { Booking } from "../models/bookingModel.js";
-import { Message } from "../models/messageModel.js";
+import { Booking } from "../models/BookingModel.js";
+import { Message } from "../models/MessageModel.js";
 
 const setupSocket = (server) => {
     const io = new Server(server, {

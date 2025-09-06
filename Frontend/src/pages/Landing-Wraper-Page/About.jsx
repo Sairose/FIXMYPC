@@ -5,9 +5,9 @@ const About = () => {
     return (
         <>
             <div id="about"
-                className="about_us w-full h-screen pt-[48px] px-[60px] bg-white flex flex-col  md:pt-0 md:px-[120px] md:gap-10 md:flex-row md:items-center md:justify-between ">
+                className="about_us w-full h-screen pt-[48px] px-10 bg-white flex flex-col  md:pt-0 md:px-[120px] md:gap-10 md:flex-row md:items-center md:justify-between ">
                 <div className="about_left">
-                    <img className='w-full h-[350px] object-cover md:w-[350px] md:h-[400px] lg:w-[414px] lg:h-[518px]'
+                    <img className='w-full h-[250px] object-cover md:w-[350px] md:h-[400px] lg:w-[414px] lg:h-[518px]'
                         src="./images/AboutImg.jpg" alt="" />
                 </div>
                 <div className="about_right w-full h-[300px] flex gap-4 flex-col md:w-[497px] md:h-[518px] md:pt-[3rem] lg:pt-0 lg:justify-between">

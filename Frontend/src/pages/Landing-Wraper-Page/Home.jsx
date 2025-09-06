@@ -25,7 +25,7 @@ const Home = () => {
                 <IoMdArrowUp className="text-3xl text-white"/>
             </a>
             <div id="home"
-                className="h-[calc(100vh-100px)] w-[100%] bg-[#2A3794] text-white flex flex-col  gap-20  items-center justify-center lg:flex-row lg:gap-5 lg:justify-between lg:items-center px-[60px] lg:px-[120px]">
+                className="h-[calc(100vh-100px)] w-[100%] bg-[#2A3794] text-white flex flex-col  gap-20  items-center justify-center lg:flex-row lg:gap-5 lg:justify-between lg:items-center px-10 lg:px-[120px]">
                 <div className="hero-left w-full flex flex-col gap-5 md:w-[400px] lg:w-[534px]">
                     <h2 className="font-Source-Serif font-semibold text-[30px]  lg:text-[48px] lg:leading-14">Welcome To Freelencing Website</h2>
                     <p className="font-Poppins text-[16px] md:text-[18px] lg:text-[20px] "

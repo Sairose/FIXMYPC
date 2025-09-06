@@ -13,7 +13,7 @@ const Home = () => {
             </div>
             <div className="hero-right">
                 <img src="../../images/hero-image.png" alt="Error"
-                    className="w-[534px] h-[357px] "
+                    className="w-[534px] h-[300px] "
                 />
             </div>
         </div>

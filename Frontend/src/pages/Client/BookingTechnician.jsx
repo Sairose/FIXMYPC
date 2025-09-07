@@ -47,7 +47,7 @@ const BookTechnician = () => {
   return (
     <>
       <ToastContainer/>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 px-[120px] py-[60px]">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 px-[10px] lg:px-[120px] py-[60px]">
         {techs.map((tech) => (
           <TechnicianCard key={tech._id} tech={tech} onBook={book} />
         ))}

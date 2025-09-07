@@ -1,52 +1,3 @@
-
-// import { useNavigate } from 'react-router-dom';
-
-// const TechnicianCard = ({ tech, onBook }) => {
-//   const navigate = useNavigate();
-
-//   const handleViewReview = () => {
-//     // navigate(`/technician/${tech._id}/reviews`);
-//     navigate(`/user/${tech._id}/reviews`);
-
-//   };
-
-//   return (
-//     <div className=" w-fit border rounded p-4 shadow-md flex flex-col items-start gap-2">
-//       <h3 className="font-bold text-lg">{tech.firstName} {tech.lastName}</h3>
-//       <p className="text-gray-600">{tech.email}</p>
-
-//       {/* ⭐ Display average rating if available */}
-//       {tech.averageRating !== undefined && (
-//         <div className="flex items-center gap-1 text-yellow-500">
-
-//           {'★'.repeat(Number(review.rating))}
-//           {'☆'.repeat(5 - Number(review.rating))}
-
-//           <span className="text-black ml-2 text-sm">({tech.averageRating.toFixed(1)})</span>
-//         </div>
-//       )}
-
-//       <div className="flex gap-2">
-//         <button
-//           onClick={() => onBook(tech._id)}
-//           className="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600"
-//         >
-//           Book
-//         </button>
-//         <button
-//           onClick={handleViewReview}
-//           className="bg-gray-200 px-3 py-1 rounded hover:bg-gray-300"
-//         >
-//           View Review
-//         </button>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default TechnicianCard;
-
-
 import { useNavigate } from 'react-router-dom';
 
 const TechnicianCard = ({ tech, onBook }) => {
@@ -57,9 +8,9 @@ const TechnicianCard = ({ tech, onBook }) => {
   };
 
   return (
-    <div className="w-fit border rounded p-4 shadow-md flex flex-col items-start gap-2 bg-white">
+    <div className="w-full border rounded p-4 shadow-md flex flex-col items-start gap-2 bg-white md:w-fit">
       
-      {/* ✅ Profile Image at Top */}
+      {/* Profile Image at Top */}
       {tech.image && (
         <img
           src={tech.image}
@@ -71,7 +22,7 @@ const TechnicianCard = ({ tech, onBook }) => {
       <h3 className="font-bold text-lg">{tech.firstName} {tech.lastName}</h3>
       <p className="text-gray-600">{tech.email}</p>
 
-      {/* ⭐ Average Rating */}
+      {/* Average Rating */}
       {tech.averageRating !== undefined && (
         <div className="flex items-center gap-1 text-yellow-500">
           {'★'.repeat(Math.floor(tech.averageRating))}

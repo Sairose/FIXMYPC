@@ -74,7 +74,7 @@ const CSetting = () => {
   return (
     <>
       <ToastContainer/>
-      <div className="h-[calc(100vh-103px)] w-full bg-[#2A3794] flex items-center justify-center p-6">
+      <div className="h-auto w-full bg-[#2A3794] flex items-center justify-center p-6 sm:h-[calc(100vh-103px)]">
         <form
           onSubmit={handleSubmit}
           className="bg-[#ffffff] text-[#000000] w-full max-w-4xl p-10 rounded-xl shadow-xl flex flex-col gap-8"

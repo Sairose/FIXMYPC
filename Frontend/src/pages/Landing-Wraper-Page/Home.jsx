@@ -21,11 +21,11 @@ const Home = () => {
     return (
         <>
             <NavBar/>
-            <a href="#navbar" className="fixed bottom-16 right-[120px] w-fit p-3 border-none bg-[#05B878] rounded-full animate-bounce  hover:cursor-pointer">
-                <IoMdArrowUp className="text-3xl text-white"/>
+            <a href="#navbar" className="fixed bottom-16 right-[5px] w-fit p-3 border-none bg-[#05B878] rounded-full animate-bounce  hover:cursor-pointer sm:right-[15px] lg:right-[120px] lg:p-2">
+                <IoMdArrowUp className="text-2xl text-white lg:text-3xl "/>
             </a>
             <div id="home"
-                className="h-[calc(100vh-100px)] w-[100%] bg-[#2A3794] text-white flex flex-col  gap-20  items-center justify-center lg:flex-row lg:gap-5 lg:justify-between lg:items-center px-10 lg:px-[120px]">
+                className="h-[calc(100vh-100px)] w-[100%] px-10 bg-[#2A3794] text-white flex flex-col  gap-20  items-center justify-center lg:flex-row lg:gap-5 lg:justify-between lg:items-center  lg:px-[120px]">
                 <div className="hero-left w-full flex flex-col gap-5 md:w-[400px] lg:w-[534px]">
                     <h2 className="font-Source-Serif font-semibold text-[30px]  lg:text-[48px] lg:leading-14">Welcome To Freelencing Website</h2>
                     <p className="font-Poppins text-[16px] md:text-[18px] lg:text-[20px] "

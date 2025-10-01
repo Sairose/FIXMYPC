@@ -21,7 +21,7 @@ const Home = () => {
     return (
         <>
             <NavBar/>
-            <a href="#navbar" className="fixed bottom-16 right-[5px] w-fit p-3 border-none bg-[#05B878] rounded-full animate-bounce  hover:cursor-pointer sm:right-[15px] lg:right-[120px] lg:p-2">
+            <a href="#navbar" className="fixed bottom-16 right-[10px] w-fit p-3 border-none bg-[#05B878] rounded-full animate-bounce  hover:cursor-pointer sm:right-[15px] lg:right-[120px] lg:p-2">
                 <IoMdArrowUp className="text-2xl text-white lg:text-3xl "/>
             </a>
             <div id="home"

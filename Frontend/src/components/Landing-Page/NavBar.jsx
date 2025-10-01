@@ -8,9 +8,9 @@ const NavBar = ({data}) => {
     setOpenNav(!openNav)
   }
   return (
-    <div id="navbar" className='w-full h-[103px] flex justify-between items-center bg-[#2A3794] text-white md:px-[120px]'>
+    <div id="navbar" className='w-full h-[103px] px-10 flex justify-between items-center bg-[#2A3794] text-white md:px-[120px]'>
       <div className="left">
-        <h1 className='text-[24px] font-normal font-Reggae ml-[60px] md:ml-0' >FIXMYPC</h1>
+        <h1 className='text-[24px] font-normal font-Reggae md:ml-0' >FIXMYPC</h1>
       </div>
       <div
         className={`right font-Poppins font-[16px] flex flex-col items-center gap-6 absolute left-4 right-4 top-[103px] 
@@ -28,7 +28,7 @@ const NavBar = ({data}) => {
       </div>
 
 
-      <RxHamburgerMenu className='text-xl hover:cursor-pointer hover:text-[#05B878] duration-300 md:hidden mr-[60px] md:mr-0'
+      <RxHamburgerMenu className='text-xl hover:cursor-pointer hover:text-[#05B878] duration-300 md:hidden md:mr-0'
         onClick={handleNav}
       />
     </div>
